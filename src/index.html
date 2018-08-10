@@ -23,15 +23,27 @@
 
 <body>
     <!--Botón de prueba de bootstrap-->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                    <h2>Bievenidx</h2>
-                    <button class="btn btn-primary btn-lg active">Administrador</button>
-                    <a href="/src/html/login.html"><button class="btn btn-secundary btn-lg active">Miembro</button>
-            </div>
-        </div>
-    </div>
+    <table class="table">
+            <thead>
+              <tr>
+               
+                <th scope="col">Nombre</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Fecha de registro</th>
+                <th scope="col">Hora</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td id = "name"></td>
+                <td id = "email"></td>
+                <td id="day"></td>
+                <td ></td>
+               
+              </tr>
+            </tbody>
+          </table>
 
     <!--Enlaces de bootstrap 4-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

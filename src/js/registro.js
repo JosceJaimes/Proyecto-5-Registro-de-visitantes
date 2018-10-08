@@ -22,6 +22,8 @@ document.getElementById('safeinfo').addEventListener('click', event => {
     location.reload(true);
   }).catch(error => {
   
+
+  
   });
 });
 

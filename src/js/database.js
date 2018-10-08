@@ -5,7 +5,7 @@ let db = firebase.firestore();
 window.memberadd = () =>{
   let tble = document.getElementById('baseTable');
   const mb = db.collection('register').orderBy('date', 'asc');
-//   let tble = document.getElementById('baseTable');
+  //   let tble = document.getElementById('baseTable');
   mb.get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
       let name = doc.data().name;
@@ -17,6 +17,7 @@ window.memberadd = () =>{
       let memb = doc.data().member;
       console.log(memb);
       let hr = doc.data().time;
+      // template string 
       tble.innerHTML += `<tr>
       
         <th> ${name}</th>
@@ -27,6 +28,7 @@ window.memberadd = () =>{
      
       <tr>
       `;
+      // interpolacion de variables
     });
   });
 };
